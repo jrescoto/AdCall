@@ -1,0 +1,5 @@
+AdCall Content Management Tool
+
+NOTES:
+1. NEVER commit app/Config/*.php to avoid conflicts between the staging and production app installation
+2. Change config files in prod to adapt with its environment settings (ie. db)

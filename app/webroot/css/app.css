@@ -1,0 +1,187 @@
+/* Artfully masterminded by ZURB  */
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Shared Styles
+:: Paging
+:: Foundation Icons overrides
+:: Top-bar custom overrides
+*/
+
+/* -----------------------------------------
+   Shared Styles
+----------------------------------------- */
+#busy-indicator {
+    display: none;
+    background: url(../img/paginate.gif) no-repeat;
+    margin-left: 5px;
+    padding-top: 30px;
+    font-size: .7em;
+}
+
+#loader {
+    display: none;
+}
+
+#dataMineLoader {
+    display: none;
+    background: url(../img/paginate.gif) no-repeat;
+    margin-top: 5px;
+    padding-top: 30px;
+}
+
+html { overflow: scroll}
+
+p.paging-details { font-size: 12px }
+
+.hidden{
+    display: none;
+}
+
+.checkbox label {
+    display: inline
+}
+
+.radio label {
+    display: inline
+}
+
+.file label {
+    display: inline
+}
+
+.logo {
+    /*background: #ffffff;*/
+}
+
+/* -----------------------------------------
+   Paging
+----------------------------------------- */
+.paging {
+	color: #ccc;
+	margin-top: 1em;
+	clear:both;
+}
+.paging .current,
+.paging .disabled,
+.paging a {
+	text-decoration: none;
+	padding: 5px 8px;
+	display: inline-block
+}
+.paging > span {
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-left: 0;
+}
+.paging > span:hover {
+	background: #efefef;
+}
+.paging .prev {
+	border-left: 1px solid #ccc;
+	-moz-border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+.paging .next {
+	-moz-border-radius: 0 4px 4px 0;
+	-webkit-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+}
+.paging .disabled {
+	color: #ddd;
+}
+.paging .disabled:hover {
+	background: transparent;
+}
+.paging .current {
+	background: #efefef;
+	color: #c73e14;
+}
+
+.labelspacer{
+    padding-top: 2px
+}
+
+.emphasize{
+border-left: 2px solid #ddd
+}
+
+
+/* -----------------------------------------
+   Foundation Icons overrides
+----------------------------------------- */
+.foundicon-settings-override { color: #2ba6cb }
+.foundicon-remove-override { color: #c60f13 }
+.foundicon-edit-override { color: #5da423 }
+.foundicon-right-arrow-override { color: #2ba6cb }
+.foundicon-search-override { color: #2ba6cb }
+.foundicon-lock-override { color: #222222 }
+.foundicon-unlock-override { color: #222222 }
+.dashboard { color: #222222 }
+.dashboard:hover { color: #2ba6cb }
+.dashboard-label { color: #222222; text-align: center }
+
+
+/* -----------------------------------------
+    Top-bar custom overrides
+----------------------------------------- */
+
+/*.top-bar{border-bottom: 3px solid #0083c4;}*/
+.top-bar > ul .name h1 a span { font-weight: bold; padding-left: 10px; font-size: 17px !important; }
+.top-bar ul > li a.dashboard  {border-bottom: 3px solid #d0db00;}
+.top-bar ul > li a.campaigns  {border-bottom: 3px solid #0083c4}
+.top-bar ul > li a.users  {border-bottom: 3px solid #de024b}
+.top-bar ul > li a.cmt_contents  {border-bottom: 3px solid #d0db00}
+.top-bar ul > li a.subscribers  {border-bottom: 3px solid #72c5e8}
+.top-bar ul > li a.statistics  {border-bottom: 3px solid #737371}
+
+
+/* -----------------------------------------
+    UI elements override
+----------------------------------------- */
+.paginate-loader {padding-top: 5px}
+
+
+/* -----------------------------------------
+    Nav-bar customization
+----------------------------------------- */
+.nav-bar2 { height: 40px; background: #fff; margin-left: 0; margin-top: 0px; padding: 0; border-bottom: solid 1px #2ba6cb }
+.nav-bar2 > li { float: left; display: block; position: relative; padding: 0; margin: 0; border: 0px solid #333333; border-right: none; line-height: 38px; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset; }
+.nav-bar2 > li:first-child { -webkit-box-shadow: 0 0 0; -moz-box-shadow: 0 0 0; box-shadow: 0 0 0; }
+.nav-bar2 > li:last-child { border-right: solid 0px #333333; -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); box-shadow: 1px 0 0 rgba(255, 255, 255, 0.2) inset, 1px 0 0 rgba(255, 255, 255, 0.2); }
+.nav-bar2 > li.active { background: #fff; border-color: #fff; }
+.nav-bar2 > li.active > a { color: #2ba6cb; cursor: default; border-bottom: solid 3px #2ba6cb;font-weight: bold}
+.nav-bar2 > li.active:hover { background: #fff; cursor: default; }
+.nav-bar2 > li:hover { background: #fff; color: #2ba6cb}
+.nav-bar2 > li > a { color: #333333; }
+.nav-bar2 > li ul { margin-bottom: 0; }
+.nav-bar2 > li .flyout { display: none; }
+.nav-bar2 > li.has-flyout > a:first-child { padding-right: 40px; position: relative; }
+.nav-bar2 > li.has-flyout > a:first-child:after { content: ""; display: block; width: 0; height: 0; border: solid 4px; border-color: #e6e6e6 transparent transparent transparent; position: absolute; right: 20px; top: 17px; }
+.nav-bar2 > li.has-flyout > a.flyout-toggle { border-left: 0 !important; position: absolute; right: 0; top: 0; padding: 20px; z-index: 2; display: block; }
+.nav-bar2 > li.has-flyout.is-touch > a:first-child { padding-right: 55px; }
+.nav-bar2 > li.has-flyout.is-touch > a.flyout-toggle { border-left: 1px dashed #666; }
+.nav-bar2 > li > a:first-child { position: relative; padding: 0 20px; display: block; text-decoration: none; font-size: 14px; }
+.nav-bar2 > li > input { margin: 0 10px; }
+.nav-bar2.vertical { height: auto; margin-top: 0; }
+.nav-bar2.vertical > li { float: none; border-bottom: none; border-right: solid 1px #333333; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+.nav-bar2.vertical > li.has-flyout > a:first-child:after { content: ""; display: block; width: 0; height: 0; border: solid 4px; border-color: transparent transparent transparent #e6e6e6; }
+.nav-bar2.vertical > li .flyout { left: 100%; top: -1px; }
+.nav-bar2.vertical > li .flyout.right { left: auto; right: 100%; }
+.nav-bar2.vertical > li.active { border-right: solid 1px #2284a1; }
+.nav-bar2.vertical > li:last-child { border-bottom: solid 1px #333333; }
+
+
+.error-div {
+    border: solid 1px #c60f13;
+    background: red;
+}
+
+.row .div-padded {
+    background: red;
+}
+
+
+div.message { display: block; padding: 6px 7px 7px; font-weight: bold; font-size: 14px; color: white; background-color: #c60f13; border: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 12px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; text-shadow: 0 -1px rgba(0, 0, 0, 0.3); position: relative; }
